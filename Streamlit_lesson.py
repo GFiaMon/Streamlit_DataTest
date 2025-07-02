@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 
 df = pd.read_csv("Berlin_crimes.csv").head(10)
+st.set_page_config(layout="wide")
 column = df.columns
 st.title("Hello Streamlit-er 👋")
 st.markdown(
